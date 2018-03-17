@@ -22,3 +22,6 @@ for data in nums:
     print(data)
 for idx, data in enumerate(nums):
     print('%d:%d' % (idx, data))
+
+seq = [x*5 for x in nums if x%2==0]
+print(seq)
