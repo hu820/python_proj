@@ -91,6 +91,38 @@ for key, value in nums.items():
     print('%s:%d' % (key, value))
 
 
+#集合（set）：不重复数据的集合
+data = {'cat','dog','tiger'}
+print('cat' in data)
+data.add('fish')
+print(data)
+print(len(data))
+data.add('cat')
+print(data)
+data.remove('cat')
+print(data)
+
+#loop
+for animal in data:
+    print(animal)
+for idx,animal in enumerate(data):
+    print("#%d:%s" % (idx,animal))
+set_data = {x**2 for x in range(20)}
+print(set_data)
+
+#tuple
+#A tuple is an (immutable) ordered list of values.
+# A tuple is in many ways similar to a list;
+# one of the most important differences is that tuples can be used as keys in dictionaries
+# and as elements of sets, while lists cannot.
+
+d={(x,x*2):x for x in range(10)}
+print(d)
+print(type(d))
+t=(1,2)
+print(type(t))
+print(d[t])
+
 
 
 
