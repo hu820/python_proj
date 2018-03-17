@@ -18,11 +18,7 @@ print(nums[:-1])  # Slice indices can be negative; prints "[0, 1, 2, 3]"
 nums[2:4] = list(range(9, 18, 1))  # Assign a new sublist to a slice
 print(nums)
 
-datas = list(range(1, 1001, 100))
-print(datas)
-print(datas[:])
-print(datas[:4])
-print(datas[5:])
-print(datas[:-1])
-datas[8] = 102
-print(datas)
+for data in nums:
+    print(data)
+for idx, data in enumerate(nums):
+    print('%d:%d' % (idx, data))
