@@ -1,3 +1,4 @@
+# list []
 xs = [3, 1, 2]  # Create a list
 print(xs, xs[2])  # Prints "[3, 1, 2] 2"
 print(xs[-1])  # Negative indices count from the end of the list; prints "2"
@@ -23,5 +24,6 @@ for data in nums:
 for idx, data in enumerate(nums):
     print('%d:%d' % (idx, data))
 
-seq = [x*5 for x in nums if x%2==0]
+# 带条件初始化
+seq = [x * 5 for x in nums if x % 2 == 0]
 print(seq)

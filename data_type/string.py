@@ -13,7 +13,12 @@ s = 'hello xi dada'
 print(s.capitalize())
 print(s.upper())
 
-#replace
+# replace
 s = 'hello python'
-s = s.replace('python','world')
+s = s.replace('python', 'world')
 print(s)
+
+d = {'person': 2, 'cat': 4}
+for animal in d:
+    legs = d[animal]
+    print('A %s has %d legs' % (animal, legs))
