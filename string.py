@@ -13,3 +13,7 @@ s = 'hello xi dada'
 print(s.capitalize())
 print(s.upper())
 
+#replace
+s = 'hello python'
+s = s.replace('python','world')
+print(s)
