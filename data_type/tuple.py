@@ -36,3 +36,11 @@ for item in tup_1:
 # 复制
 tup_4 = tup_1 * 3
 print(tup_4)
+# 索引
+print(tup_4[:4])  # 读取前4个数据
+print(tup_4[:-2])  # 服务直到倒数第二个数字
+
+# 将list转换为tuple
+list_1 = [1, 2, 3, 4]
+tuple_5 = tuple(list_1)
+print(type(tuple_5))
