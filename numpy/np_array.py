@@ -37,3 +37,27 @@ mask = arr > 5
 print 'boolean mask is:'
 print mask
 print arr[mask]
+
+# 取一些特定位置
+# Create a new array from which we will select elements
+a = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9], [10, 11, 12]])
+
+print(a)  # prints "array([[ 1,  2,  3],
+#                [ 4,  5,  6],
+#                [ 7,  8,  9],
+#                [10, 11, 12]])"
+# Create an array of indices
+b = np.array([0, 2, 0, 1])
+
+# Select one element from each row of a using the indices in b
+# 去一个等差数据，【0，1，2，3】然后在取第1，3，1，2列
+print(a[np.arange(4), b])  # Prints "[ 1  6  7 11]"
+
+# 做一些特殊的加法等
+# Mutate one element from each row of a using the indices in b
+# 先取出前4行，然后取第第1，3，1，2列，在这些数据上加10
+a[np.arange(4), b] += 10
+print(a)  # prints "array([[11,  2,  3],
+#                [ 4,  5, 16],
+#                [17,  8,  9],
+#                [10, 21, 12]])
