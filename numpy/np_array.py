@@ -33,6 +33,7 @@ arr = np.array([[1, 2, 3, 4],
                 [3, 6, 9, 12],
                 [4, 8, 12, 16]])
 
+
 mask = arr > 5
 
 print 'boolean mask is:'
