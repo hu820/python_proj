@@ -12,3 +12,4 @@ print(nums)
 print(nums.get('fish', 'NA'))
 for key, value in nums.items():
     print('%s:%d' % (key, value))
+    print('%s' % key)
