@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-lass Greetor(object):
+class Greetor(object):
     # Constructor
     def __init__(self, name):
         self.name = name
