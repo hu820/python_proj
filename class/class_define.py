@@ -14,8 +14,4 @@ class Greetor(object):
 
 g = Greetor('Fredmen');
 g.greet()
-g.greet(True)
-g.greet(True)
-g.greet(True)
-g.greet(True)
-g.greet(True)
+
